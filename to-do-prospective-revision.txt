@@ -1,1 +1,1 @@
-To do item 1.  Create a clonable directory structure ready for BBCP content and use.
+To do item 2.  Change README to README.md, slight editing.

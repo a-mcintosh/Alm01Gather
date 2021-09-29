@@ -1,3 +1,5 @@
+#BBCP, deb, git
+
 A directory tree with multiple simultaneous uses.
 
 This is a git archive, and also a ready to use filesystem for
@@ -16,3 +18,8 @@ To use one or more subsystems in
   
 Using this approach, a set of subsystems may be added or removed from the installed bbcb directory.
 
+To quickly set up a new archive:
+  git clone old new
+  git branch --list
+  git branch -b <your branch name>
+  git branch -d <old branch names>
