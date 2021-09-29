@@ -1,0 +1,18 @@
+Source: bbcb
+Section: devel
+Maintainer: Aubrey McIntosh, PhD <aubrey.mcintosh@utexas.edu>
+Homepage: 
+Package: alm01gather
+Version: 3
+Priority: optional
+Installed-Size: 20
+Architecture: i386
+Depends: bbcb
+Description: A legacy program to topologically sort modules for compiling.
+ .
+ The selection names 1 or more modules to compile.  The IMPORT list of the source is read, and those modules are added to the job.
+ .
+  A viewer is opened, and a command presented with all the modules in an indented correct compile order.  Modules with missing source files are listed before the command.
+ .
+ The list may be edit for any reason.  At any time, the compile command may be initiated.
+
