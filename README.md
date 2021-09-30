@@ -3,6 +3,7 @@
 A directory structure with multiple simultaneous uses.
 
 This is a .deb staging area.
+  cd ./deb_root
   dpkg-deb --build --root-owner-group `readlink -f .`
   
 This is a git archive.
@@ -15,7 +16,7 @@ This is a git archive.
 This is a user directory in BBCB.
     Do what you normally do in BBCP.
   
-      cd ./usr/lib/bbcb/.
+      cd ./deb_root/usr/lib/bbcb/.
       bbcb &
   
 Multiple subsystems are stored in multiple git branches
