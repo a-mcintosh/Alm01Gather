@@ -1,25 +1,27 @@
 #BBCP, deb, git
 
-A directory tree with multiple simultaneous uses.
+A directory structure with multiple simultaneous uses.
 
-This is a git archive, and also a ready to use filesystem for
+This is a .deb staging area.
   dpkg-deb --build --root-owner-group `readlink -f .`
   
-To use git:
-    do what you normally would do
-    also, git commit -F to-do-prospective-revision.txt
+This is a git archive.
+    Do what you normally do using git.
     
-To use one or more subsystems in 
-  Black Box Component Builder:
-  
-  cd ./usr/lib/bbcb/.
-    none, one, or many subsystems may be here.  Creating a new subsystem, or compiling modules creates content here.
-  bbcb
-  
-Using this approach, a set of subsystems may be added or removed from the installed bbcb directory.
+      gedit to-do-prospective-revision.txt
+      git commit -F to-do-prospective-revision.txt
 
-To quickly set up a new archive:
-  git clone old new
+
+This is a user directory in BBCB.
+    Do what you normally do in BBCP.
+  
+      cd ./usr/lib/bbcb/.
+      bbcb &
+  
+Multiple subsystems are stored in multiple git branches
   git branch --list
-  git branch -b <your branch name>
-  git branch -d <old branch names>
+  git checkout create-sandbox
+  git branch -b <your new subsystem>
+
+Recommended use is to git commit, create a .deb, and install a subsystem, then work on the other subsystem.
+
